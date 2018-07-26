@@ -1,4 +1,4 @@
-export const movies = [
+export const moviesList = [
   {
     id: 1,
     title: 'The Shawshank Redemption',
@@ -98,6 +98,6 @@ export const movies = [
       'Embeth Davidtz'
     ],
     hours: ['Tuesday 19:30, 22:30', 'Thursday 21:00'],
-    room: 2
+    room: 5
   }
 ];

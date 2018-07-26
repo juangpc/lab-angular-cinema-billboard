@@ -1,0 +1,35 @@
+<div class="movie-container">
+  <div class="title-container">
+    <h5>ROOM {{m.room}}</h5>
+    <h4>{{m.title}}</h4>
+  </div>
+  <div class="movie-body-container">
+    <div class="img-container">
+      <a [routerLink]="['/movie',m.id]">
+        <img src="{{m.poster}}" alt="{{m.title}} poster image" width="200px">
+      </a>
+    </div>
+    <div>
+      <dl *ngFor="let g of m.genres ">
+        <dt>Genres: </dt>
+        <dd>{{g}}</dd>
+      </dl>
+    </div>
+  </div>
+  
+  
+</div>
+
+<!-- 
+<h2>Complete list of Movies</h2>
+<div class="movie-container">
+  <div class="movie-card" *ngFor="let m of mymovies">
+    <h5>ROOM {{m.room}}</h5>
+    <div class="img-container">
+      <a [routerLink]="['/movie',m.id]"><img src="{{m.poster}}" alt="{{m.title}} poster image" width="200px"></a>
+    </div>
+    <a [routerLink]="['/movie',m.id]"><h6>{{m.title}}</h6></a>
+  </div>
+</div>
+
+ -->
